@@ -1,0 +1,10 @@
+.greating{
+    @include flexbox($dir: column, $jc: center);
+
+    &__box{
+        width: 55%;
+        border-radius: 1rem;
+        padding: 35px;
+        margin: 15px;
+    }
+}

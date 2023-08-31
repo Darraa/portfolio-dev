@@ -1,0 +1,24 @@
+#contact{
+    position: relative;
+    .contact{
+        &__link{
+            padding-top: 20px;
+            &-item{
+                a{
+                    @include flexbox($ai: center);
+                    gap: .5em;
+                    color: #C7C4C4;
+                    padding-bottom: 10px;
+
+                    svg{
+                        fill: rgb(203, 201, 253);
+                    }
+
+                    &:hover{
+                        color: #8886ac;
+                    }
+                }
+            }
+        }
+    }
+}

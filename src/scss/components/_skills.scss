@@ -1,0 +1,27 @@
+.skills{
+    @include flexbox($dir: column, $ai:center, $wrap: nowrap);
+    gap: 1.5em;
+
+    &__list{
+        @include flexbox($jc: center);
+        width: 90%;
+        gap: 1em;
+
+        &-item{
+            @include flexbox($dir: column, $ai:center);
+            padding: 4%;
+            gap: .5em;
+            border: 1px solid #CBC9FD;
+            color: #CBC9FD;
+            font-weight: bold;
+
+            &:hover{
+                background-color: #CBC9FD;
+                border: transparent;
+                color: #1A1925;
+                transform: scale(1.1);
+                transition: .5s;
+            }
+        }
+    }
+}

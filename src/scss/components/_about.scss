@@ -1,0 +1,41 @@
+@import "./btn";
+
+.about {
+    @include flexbox($jc: center, $ai: center);
+    width: 90%;
+
+    border-radius: 1rem;
+
+    &__img {
+        width: 30%;
+
+    }
+
+    &__description {
+        width: 60%;
+        line-height: 1.5;
+
+        p {
+            font-size: calc(13px + 2 * (100vw/1280));
+            color: #C7C4C4;
+
+            span {
+                color: #CBC9FD;
+                display: inline;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .about{
+        &__img{
+            display: none;
+        }
+
+        &__description{
+            width: 90%;
+        }
+    }
+}

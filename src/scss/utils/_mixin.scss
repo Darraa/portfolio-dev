@@ -1,0 +1,12 @@
+@mixin flexbox($dir: row, $jc: flex-start, $ai: flex-start, $wrap: wrap) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $wrap;
+}
+
+@mixin fullScreen ($width: 100%, $height: 100vh) {
+    width: $width;
+    height: $height;
+}

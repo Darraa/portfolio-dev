@@ -1,0 +1,24 @@
+.projects {
+    @include flexbox($dir: column, $ai: center);
+    gap: 1.5em;
+    width: 90%;
+    &__list {
+        .project {
+            color: #C7C4C4;
+            @include flexbox($dir: column, $jc: space-between);
+            gap: .5rem;
+            span {
+                color: #CBC9FD;
+                font-weight: bold;
+            }
+
+            &__links {
+                svg {
+                    fill: #CBC9FD;
+                    margin-right: 5px;
+                }
+            }
+
+        }
+    }
+}
